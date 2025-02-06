@@ -29,4 +29,4 @@ jobs:
           echo $CREDENTIALS_JSON_BASE64 | base64 -d > credentials.json
 
       - name: 🚀 Build app
-        run: eas build --non-interactive --platform all --profile development
+        run: eas build --non-interactive --platform android --profile development
